@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MenuActivity.SnacksActivity">
+
+    <Button
+        android:id="@+id/myOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Order"
+        android:onClick="clickMyOrder"
+        android:layout_alignParentRight="true">
+    </Button>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:onClick="clickHistory"
+        android:layout_alignParentLeft="true">
+    </Button>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardElevation="10dp"
+            android:onClick="clickChips">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgChips"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/chips"/>
+                <TextView
+                    android:id="@+id/txtChips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chips"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/priceChips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 5000"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardElevation="10dp"
+            android:onClick="clickRoll">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgRoll"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cinnamonroll"
+                    />
+                <TextView
+                    android:id="@+id/txtRoll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cinnamon Roll"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/priceRoll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10000"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardElevation="10dp"
+            android:onClick="clickTaco">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgTaco"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/taco"/>
+                <TextView
+                    android:id="@+id/txtTaco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taco"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/pricePorridge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10000"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardElevation="10dp"
+            android:onClick="clickFries">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFries"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/frenchfries"
+                    />
+                <TextView
+                    android:id="@+id/txtFries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="French Fries"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/priceFries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10000"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>

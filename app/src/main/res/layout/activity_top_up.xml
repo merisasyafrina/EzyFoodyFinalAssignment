@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TopUpActivity">
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp20.000"
+        android:textColor="#0073CF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Current Balance"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBinusEzyFood2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCart3"
+        app:layout_constraintStart_toStartOf="@+id/buttonCart3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCart3" />
+
+    <TextView
+        android:id="@+id/textViewBinusEzyFood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Top Up"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHistory3"
+        app:layout_constraintStart_toStartOf="@+id/buttonHistory3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHistory3" />
+
+    <Button
+        android:id="@+id/buttonCart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="clickMyOrder"
+        android:text="My Order"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBinusEzyFood2" />
+
+    <Button
+        android:id="@+id/buttonHistory3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="clickHistory"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBinusEzyFood2"/>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Top Up Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintStart_toStartOf="@+id/textViewBinusEzyFood2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBinusEzyFood2" />
+
+    <Button
+        android:id="@+id/buttonAddBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="clickTopUp"
+        android:text="Top Up"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAmount"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/editTextAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAmount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
